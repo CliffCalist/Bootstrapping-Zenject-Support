@@ -1,0 +1,11 @@
+{
+    "name": "com.white-arrow.bootstrapping.zenject",
+    "version": "1.0.0",
+    "displayName": "Bootstrapping Zenject Support",
+    "description": "Extension that implements Zenject support in the Bootstrapping library.",
+    "licensesUrl": "https://github.com/CliffCalist/Bootstrapping-Zenject-Support/blob/b25933b7aee971aff3492562777727440d846af0/LICENSE",
+    "author": {
+        "name": "White Arrow",
+        "email": "cliffstersprog@gmail.com"
+    }
+}
