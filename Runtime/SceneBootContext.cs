@@ -7,17 +7,17 @@ namespace WhiteArrow.Bootstrapping.Zenject
 {
     public abstract class SceneBootContext : SceneBoot
     {
-        public static DiContainer DiContainer { get; private set; }
+        public static DiContainer Container { get; private set; }
 
 
 
         public override sealed void Run(Action onEnded)
         {
-            DiContainer?.UnbindAll();
-            DiContainer = CreateDiContainer();
+            Container?.UnbindAll();
+            Container = CreateDiContainer();
 
-            if (DiContainer == null)
-                Debug.LogWarning($"{nameof(DiContainer)} is null.");
+            if (Container == null)
+                Debug.LogWarning($"{nameof(Container)} is null.");
 
             RunCore(onEnded);
         }
